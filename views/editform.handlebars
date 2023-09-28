@@ -1,0 +1,12 @@
+<h1>Editando</h1>
+
+<form action='/edit' method='post'>
+  <input type='hidden' name='id' value='{{user.id}}' />
+  <label for='name'>Nome:</label>
+  <input type='text' name='name' value='{{user.name}}' />
+  <label for='email'>Email:</label>
+  <input type='email' name='email' value='{{user.email}}' />
+  <label for='fone'>Nome</label>
+  <input type='text' name='fone' value='{{user.fone}}' />
+  <input type='submit' value='Editar' />
+</form>

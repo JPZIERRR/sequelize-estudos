@@ -1,0 +1,17 @@
+<h1>Users</h1>
+
+{{#each users}}
+<ul>
+<li>
+        <span>{{this.name}}</span>
+        <span>{{this.email}}</span>
+        <span>{{this.fone}}</span>
+        <span class='actions'>
+          <a href='/edit/{{this.id}}' class='btn'>Editar</a>
+          <form action='/delete' method='post'>
+            <input type='hidden' name='id' value='{{this.id}}' />
+            <input type='submit' value='Excluir' class='btn' />
+          </form>
+        </span>
+</ul>
+{{/each}}
